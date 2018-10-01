@@ -4,11 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.logging.Logger;
 
 public class DispatcherServlet extends HttpServlet {
-
-    private static Logger LOGGER = LoggerFactory.getLogger(DispatcherServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -18,7 +15,6 @@ public class DispatcherServlet extends HttpServlet {
         req.setAttribute("hello",req.getParameter("name"));
         getServletContext().getRequestDispatcher("/hello.jsp").forward(req,resp);
         out.close();
-
     }
 
     @Override
