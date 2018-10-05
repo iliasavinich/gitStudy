@@ -9,9 +9,10 @@
 <html>
   <!-- Закройте окно, мне дует ! -->
   <head>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
     <title>ПЁТОРРР</title>
   </head>
   <body>
-  <h1>Hello World, ${hello} ! </h1>
+  <h1>Hello World ! </h1>
   </body>
 </html>
